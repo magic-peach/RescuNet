@@ -1,0 +1,187 @@
+.analytics-wrapper {
+  background-color: whitesmoke;
+  padding-block: 1rem;
+}
+
+.analytics-cards {
+  width: 100%;
+  /* background-color: salmon; */
+  /* height: 50vh; */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 1.2rem;
+  padding-block: 0.5rem;
+  gap: 1.5rem;
+}
+
+.analytics-card {
+  min-width: 275px;
+  font-family: "Inter", sans-serif !important;
+  width: 20%;
+  max-width: 275px;
+  aspect-ratio: 1/1;
+  min-height: 0 !important;
+  border: none;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  box-shadow: 2px 2px 4px var(--light-gray);
+  margin: 0;
+  padding: 1rem;
+}
+
+.card-content-section {
+  display: flex;
+  /* justify-content: space-around; */
+  align-items: center;
+  flex-direction: column;
+}
+
+.card-text {
+  font-size: clamp(2rem, 2.5vw, 2.5rem) !important;
+  font-weight: 800;
+  margin-bottom: 0.5rem;
+  text-wrap: nowrap;
+}
+
+.card-title {
+  text-wrap: nowrap;
+  font-size: 1rem;
+  line-height: 1rem !important;
+  font-weight: 400;
+}
+
+.analytics-card-icon {
+  width: 40px;
+  height: 40px;
+}
+
+.analysis-charts {
+  width: 100%;
+  height: fit-content;
+  /* min-height: 40vh; */
+  flex-wrap: wrap;
+  padding: 1.2rem;
+  /* background-color: salmon; */
+  display: flex;
+  gap: 1rem;
+  padding-block: 1rem;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+
+  /* background-color: salmon; */
+}
+
+.charts-disaster-distribution {
+  background-color: white;
+  box-shadow: 2px 2px 4px var(--light-gray);
+  /* padding: 2rem; */
+  border-radius: 25px;
+  width: 40% !important;
+  min-width: 390px;
+  aspect-ratio: 5 / 4;
+  flex: 1 1 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  max-width: 90%;
+  /* position: relative; */
+}
+
+.charts-sos-history {
+  position: relative;
+  background-color: white;
+  /* min-height: ; */
+  max-width: 90%;
+  max-height: 60%;
+  /* height: 100% !important; */
+  box-shadow: 2px 2px 4px var(--light-gray);
+  aspect-ratio: 16 / 9.25;
+  /* padding: 2rem; */
+  border-radius: 25px;
+  width: 55%;
+  flex: 1 1 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* position: relative; */
+}
+
+.chart-container {
+  max-height: 100%;
+  max-width: 100%;
+  width: 100%;
+  height: 100%;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+}
+
+.map-wrapper {
+  height: 78vh;
+  border-radius: 25px;
+  padding: 1rem;
+  overflow: hidden;
+}
+.leaflet-container {
+  height: 100% !important;
+  width: 100%;
+  background: white;
+  border-radius: 25px;
+}
+
+.map-popup-cards {
+  display: flex;
+  gap: 1rem;
+  width: fit-content;
+  height: fit-content;
+  padding: 1rem;
+}
+
+.leaflet-popup {
+  width: fit-content;
+  max-width: fit-content;
+}
+
+.leaflet-popup-content-wrapper {
+  width: fit-content !important;
+  max-width: fit-content;
+}
+
+.leaflet-popup-content {
+  width: fit-content !important;
+}
+
+.map-popup-card {
+  background-color: var(--light-gray);
+  min-width: 150px;
+  aspect-ratio: 1/1;
+  border-radius: 25px;
+  font-family: "Inter", sans;
+  font-weight: 700;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.map-popup-card span {
+  font-weight: 500;
+  font-size: 0.85rem;
+  padding-top: 1rem;
+}
+
+.map-popup-card {
+  font-size: 2rem;
+}
+
+.map-popup-card.popup-state {
+  font-size: 1.3rem;
+  text-align: center;
+}

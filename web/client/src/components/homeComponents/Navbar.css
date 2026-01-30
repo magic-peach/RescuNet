@@ -1,0 +1,106 @@
+/* Navigation Bar */
+.nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: #ff653c;
+  padding: 0 20px; /* Reduced horizontal padding */
+  height: 70px;
+  color: #fff;
+  font-feature-settings: "liga" off, "clig" off;
+  font-family: Inter, sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 20px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  justify-content: space-between;
+  width: 100%; /* Ensure full width */
+  box-sizing: border-box; /* Prevent padding from causing overflow */
+}
+
+.ndrf_logo {
+  padding: 1.5px;
+  border-radius: 50%;
+  background-color: #fff;
+}
+
+.nav-item a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.home-nav-right {
+  display: flex;
+  gap: 1rem;
+  text-transform: none;
+  letter-spacing: 0px;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Login Button */
+.login-btn {
+  background: #2b3674;
+  color: white;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 0.6rem 2rem; /* Reduced padding for better responsiveness */
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  color: #fff;
+  font-family: Inter, sans-serif;
+  font-style: normal;
+  line-height: 20px;
+  letter-spacing: 2px;
+  white-space: nowrap; /* Prevent text from wrapping */
+  transition: background-color 0.3s ease; /* Optional: smooth hover effect */
+  margin-right: 5rem;
+}
+
+.login-btn:hover {
+  background-color: #1e2554; /* Slightly darker shade for hover state */
+}
+
+.change-language .dropdown-toggle {
+  border-radius: 10px;
+  background: var(--primary-color) !important;
+  font-family: "Inter", sans-serif;
+  border: 2px solid var(--primary-color);
+}
+
+.change-language .dropdown-menu {
+  font-family: "Inter", sans-serif;
+}
+
+.change-language .dropdown-menu .dropdown-item:active {
+  background: var(--primary-color);
+}
+
+/* Media query for screens less than 600px */
+@media (max-width: 600px) {
+  .nav {
+    padding: 0 10px; /* Further reduce padding on small screens */
+    height: 60px; /* Adjust height to fit small screens */
+    font-size: 12px; /* Slightly smaller font size */
+  }
+
+  .login-btn {
+    padding: 0.6rem 1.5rem; /* Reduce button padding on small screens */
+    font-size: 12px; /* Slightly smaller font size for better readability */
+    letter-spacing: 1px; /* Reduce letter-spacing for better text fitting */
+  }
+}
+
+/* Media query for screens between 600px and 1024px */
+@media (max-width: 1024px) {
+  .nav {
+    padding: 0 15px; /* Adjust padding for medium-sized screens */
+  }
+
+  .login-btn {
+    padding: 0.6rem 1.8rem; /* Adjust button padding */
+  }
+}

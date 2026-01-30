@@ -1,0 +1,22 @@
+:root {
+  --primary: #fc7753;
+  --secondary: #69140e;
+  --white: #f2f3d9;
+  --blue: #b7c3f3;
+  --dark-blue: #2b3674;
+  --font-family: "Inter", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  /* overflow-x: hidden; */
+  overflow: visible;
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+}
